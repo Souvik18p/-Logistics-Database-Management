@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="2page.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</head>
+<body>
+    <div class="background">
+		<nav class="navbar">
+			<div class="container">
+			  <div class="navbar-logo">
+				<a href=""></a>
+				<lord-icon
+				src="https://cdn.lordicon.com/uetqnvvg.json"
+				trigger="loop"
+				colors="primary:#121331,secondary:#08a88a"
+				scale="15"
+				state="loop"
+				style="width:250px;height:250px;display: flex;
+					align-items: left;
+					justify-content: left-end;
+					position: absolute;
+					left: -4px;
+					top: -95.6px;
+					">
+				</lord-icon>
+				
+			  </div>
+			  <ul class="navbar-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			  </ul>
+			  <div class="navbar-auth">
+				<a href="#" class="navbar-login">Login</a>
+				<a href="#" class="navbar-signup">Sign Up</a>
+			  </div>
+			  <div class="navbar-hamburger">
+				<div class="hamburger-line"></div>
+				<div class="hamburger-line"></div>
+				<div class="hamburger-line"></div>
+			  </div>
+			</div>
+		  </nav>
+		  <div class="slider">
+            <img src="image\1.jpg" alt="Image 1">
+
+            <img src="image\2.jpg" alt="Image 2">
+            <img src="image\3.jpg" alt="Image 3">
+         </div>
+          <script>
+            const sliderImages = document.querySelectorAll('.slider img');
+            const slideInterval = 6000;
+
+            let currentSlide = 0;
+            sliderImages[currentSlide].classList.add('active');
+
+            function nextSlide() {
+            sliderImages[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % sliderImages.length;
+            sliderImages[currentSlide].classList.add('active');
+            
+            }
+
+            setInterval(nextSlide, slideInterval);
+          </script>
+		  <div class="bottom-bg"></div>
+          <div class="header-container">
+            <h2>ROAD FREIGHT</h2>
+            <h2>&nbsp;AIR FREIGHT</h2>
+            <h2>OCEAN FREIGHT</h2>
+            <h2>EXPEDITED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+          </div>
+		  <div class="p-container">
+		<p><strong>&nbsp;FORWARDING</strong><br>
+			&nbsp;Nearly all items of cargo<br>&nbsp;are
+			transported at<br> &nbsp;some stage of
+			their<br>&nbsp;journey along the<br> &nbsp;world’s
+			 roads</p>
+		<p><strong>FORWARDING</strong><br>
+			As a leader in global<br> air freight
+			forwarding<br>OIA Global excels<br>
+			in providing<br> tailored<br>
+			transportation </p>
+		<p><strong>FORWARDING</strong><br>
+			Ocean Freight plays<br>perhaps
+			 the most<br>vital role in most<br>
+			 transportation and<br> supply
+			 chain</p>
+		<p><strong>FORWARDING</strong><br>
+			Logistic understand<br> part
+			of the supply<br> chain 
+			optimization<br> process
+			is having<br> a level of <br>
+			service</p>
+	<div class="OUR-SERVICES">
+		<h><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUR<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERVICES!</h>
+	<div class="container">
+		<img src="image\4.jpg" alt="Image"  >
+		<a href="" class="sk">logistic</a>
+	</div>
+	</div>
+	<div class="service-calculator">
+
+		<h2>Service Calculator</h2>
+		<form>
+		  <div class="form-group">
+			<label for="origin">Origin:</label>
+			<input type="text" id="origin" name="origin">
+		  </div>
+		  <div class="form-group">
+			<label for="destination">Destination:</label>
+			<input type="text" id="destination" name="destination">
+		  </div>
+		  <div class="form-group">
+			<label for="weight">Weight (in kg):</label>
+			<input type="number" id="weight" name="weight">
+		  </div>
+		  <div class="form-group">
+			<label for="distance">Distance (in km):</label>
+			<input type="number" id="distance" name="distance">
+		  </div>
+		  <div class="form-group">
+			<label for="transportation">Transportation:</label>
+			<select id="transportation" name="transportation">
+			  <option value="road">Road</option>
+			  <option value="rail">Rail</option>
+			  <option value="sea">Sea</option>
+			  <option value="air">Air</option>
+			</select>
+		  </div>
+		  <button type="button" onclick="calculate()">Calculate</button>
+		</form>
+		<div id="result"></div>
+	</div>
+	<script>
+		function calculate() {
+		var origin = document.getElementById("origin").value;
+		var destination = document.getElementById("destination").value;
+		var weight = document.getElementById("weight").value;
+		var distance = document.getElementById("distance").value;
+		var transportation = document.getElementById("transportation").value;
+		
+		var rate;
+		
+		if (transportation === "road") {
+			rate = 0.11;
+		} else if (transportation === "rail") {
+			rate = 0.25;
+		} else if (transportation === "sea") {
+			rate = 0.33;
+		} else if (transportation === "air") {
+			rate = 0.55;
+		}
+		
+		var cost = weight * distance * rate;
+		
+		var result = "The cost of transporting " + weight + " kg of goods from " + origin + " to " + destination + " by " + transportation + " is " + cost + " /-RS.";
+		
+		document.getElementById("result").innerHTML = result;
+		}
+	</script>
+	<div class="side-bg">
+		<h><b><br><br><br>Get an  instant
+			
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quote for Your
+			<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipping Needs<b></h>
+	</div>
+	<div class="ship-now">
+		<h><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUR<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORDER!</h>
+	<div class="container">
+		<img src="image\7.jpg" alt="Image 1" class="img1"   >
+		<button style="background-color: #3498db; color: white; padding: 10px 20px; font-size: 18px; border-radius: 2rem; margin-left: 13%;">Ship Now</button>
+	</div>
+	</div>
+	<div class="contact-form">
+
+	<form>
+    <label for="name"> <br>Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email"><br>Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject"><br>Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message"><br>Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  </div>
+  <div class="cont-bg">
+	<h2><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8698CONTACT
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US&#x21DD<b></h2>
+</div>
+
+<div class="social-icons">
+	
+	
+	<a href="#"><img src="image\twitter-icone-1.png" alt="Twitter" </a>
+    <a href="#"><img src="image\facebook-logo-circle-2.png" alt="Facebook"></a>
+    <a href="#"><img src="image\google_512x512.png" alt="Google"></a>
+    <a href="https://www.instagram.com"><img src="image\Instagram_icon.png" alt="Instagram"></a>
+    <a href="#"><img src="image\github_PNG40.png" alt="github"></a>
+	<div class="footer">
+		<p>&copy; 2023 Your Company Name. All rights reserved. | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+	  </div>
+	
+  </div>
+
+  
+
+  
+
+	
+		
+		  
+	  
+	
+	
+	
+
+		  		
+    
+</body>
+</html>
