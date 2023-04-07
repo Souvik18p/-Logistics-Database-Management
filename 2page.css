@@ -142,6 +142,8 @@
   }
 
   
+
+  
   
   .slider img {
     width: 100%;
@@ -395,3 +397,10 @@ color: whitesmoke;
   text-align: center;
   font-size: 14px;
 }
+.cname{
+  position: absolute;
+  left: 95px;
+  top: 2.9px;
+  color: #0f1110;
+}
+
