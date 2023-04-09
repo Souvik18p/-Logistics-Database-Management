@@ -151,13 +151,19 @@ body {
       display: flex;
     }
   }
-  .mydiv{
   @import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
- 
-  overflow: -moz-hidden-unscrollable;
-  margin: 10;  
-
-
+body{
+  overflow: hidden;
+  margin: 0;
+}
+#word{
+  font-family: Megrim, cursive;
+  font-size: 20vh;
+  position: absolute;
+  margin: 10;
+  /*bottom: 0;*/
+  color: #fc0;
+  -webkit-text-stroke: 0.15vh #c0f;
 }
 
 
@@ -265,6 +271,27 @@ body {
   color: whitesmoke;
   right: 74%;
   
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: red;
+}
+.tooltip:hover::before {
+  content: attr(data-bobik) ' ';
+  position: absolute;
+  
+  display: block;
+  left: 100%;
+  margin-left: 5px;
+  padding: 5px;
+  
+  
+  background: #000;
+  color: #e7dfdf;
+  border-radius: 4px;
+  
+  white-space: nowrap;
 }
 
 
