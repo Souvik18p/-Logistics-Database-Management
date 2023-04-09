@@ -1,4 +1,6 @@
+
 #  SAS LOGISTICS
+
 This is an HTML document for a logistics website's landing page. The page includes a header with a logo, navigation menu, and login/signup buttons. The background has a Lordicon animation that loops continuously. The main content includes a large heading that welcomes visitors to SAS Logistics and a button to try their services.
 
 The page also has an error message section with the heading "Logistic! 404" and a tagline that reads "Let us handle your heavy lifting so you can grow your business with confidence".
@@ -14,3 +16,6 @@ The homepage of the website has a slider with images related to logistics and fr
 Below the header titles, there are four paragraphs that provide brief information about the different types of freight forwarding services offered. The website also has a section titled "OUR SERVICES!" with an image of a container and a link to the logistics page.
 
 The website also has a service calculator form where users can input their origin, destination, and weight to get an estimated price for shipping their goods. Overall, the website is designed to provide users with information about the logistics company's services and an easy way to calculate the estimated cost of shipping their goods
+
+The website also has a service calculator form where users can input their origin, destination, and weight to get an estimated price for shipping their goods. Overall, the website is designed to provide users with information about the logistics company's services and an easy way to calculate the estimated cost of shipping their goods
+
