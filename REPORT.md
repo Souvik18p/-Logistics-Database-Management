@@ -1,5 +1,4 @@
-
-#  SAS LOGISTICS #f03c15
+#  SAS LOGISTICS 
 ## INTRODUCTION 
 Hello and welcome to our project! In this project, we aim to provide you with an informative and engaging experience. Our goal is to give you a clear understanding of what our project is about and how it can benefit you.
 Our project is focused on logistics, which is an essential aspect of many businesses. We understand that logistics can be complex and overwhelming, so we want to simplify it for you. Our project will provide you with information about logistics and how it can help your business grow.
